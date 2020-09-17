@@ -1,0 +1,39 @@
+.stateHeadings{
+
+    color:orange;
+}
+.activeHeadings{
+ 
+    color:red;
+}
+.confirmedHeadings{
+    color:green;
+
+}
+.recoveredHeadings{
+    color:blue;
+
+}
+.deathsHeadings{
+
+    color:purple;
+}
+
+.headings{
+
+    margin:10px 0px 0px 0;
+    padding-bottom: 20px;
+    border-bottom-style: inset;
+    border-bottom-width: 1px;
+    border-bottom-color:wheat;
+    font-weight: bold;
+
+}
+
+.state{
+
+    border-bottom-style: inset;
+    border-bottom-width: 1px;
+    border-bottom-color:wheat;
+    
+}

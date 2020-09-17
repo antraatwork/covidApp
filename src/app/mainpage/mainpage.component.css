@@ -1,0 +1,68 @@
+.header{
+
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    font-size:30px;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    
+}
+
+.statesPage{
+    
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(211, 214, 183);
+    color:black;
+    font-weight: bold;
+    border-radius:5px;
+    margin: 0px 0px 5% 90%;
+
+}
+
+.statesPage:hover{
+   
+    cursor: pointer;
+} 
+
+/* #viewoption:hover{
+
+    cursor: pointer;
+}
+#viewoption{
+
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border-color: rgb(37, 37, 37);
+    width: inherit;
+
+} */
+
+.top{
+   
+    margin:0px 0px 40px 0px;
+    border-bottom-style:inset;
+    border-bottom-color: rgb(243, 240, 235);
+    background-color: rgb(243, 240, 235);
+    margin: 0 0 5px 0;
+
+}
+
+.details{
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211, 214, 183);
+    color:black;
+    padding:10px;
+    border-radius:20px;
+    border-style:solid;
+
+}
+

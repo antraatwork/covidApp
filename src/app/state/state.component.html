@@ -1,0 +1,50 @@
+
+<!-- <div class="container">
+    <div class="row" *ngFor="let stateArray of arr">
+    <div class= "col-md-12" *ngIf= "stateArray">
+        <ngx-charts-bar-vertical
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="stateArray"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [legendTitle]="showLegendLabel"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel">
+        </ngx-charts-bar-vertical>
+    </div> 
+    </div>
+</div> -->
+
+<div class= "container">
+
+    <div class="row headings">
+        <div class="col-md-4 stateHeadings">State</div>
+        <div class="col-md-2 activeHeadings">Active</div>
+        <div class="col-md-2 confirmedHeadings">Confirmed</div>
+        <div class="col-md-2 recoveredHeadings">Recovered</div>
+        <div class="col-md-2 deathsHeadings">Deaths</div>
+
+    </div>
+
+    <div class="row state" *ngFor= "let state of stateDetails">
+        <div class="col-md-4" *ngIf= "state.state">
+            <p>{{state.state}}</p>
+        </div>
+        <div class="col-md-2" *ngIf= "state.active">
+            <p>{{state.active}}</p>
+        </div>
+        <div class="col-md-2" *ngIf= "state.confirmed">
+            <p>{{state.confirmed}}</p>
+        </div>
+        <div class="col-md-2" *ngIf= "state.recovered">
+            <p>{{state.recovered}}</p>
+        </div>
+        <div class="col-md-2" *ngIf= "state.deaths">
+            <p>{{state.deaths}}</p>
+        </div>
+    </div>
+
+</div>
