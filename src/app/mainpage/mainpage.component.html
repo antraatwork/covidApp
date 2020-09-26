@@ -1,27 +1,24 @@
-<div class="container">
 
-   <div class="row top">
-       <div class= "col-md-12 header">Covid19 Tracker</div>
+   <div class="top">
+       <div class= "header">Covid19 Tracker</div>
    </div>
 
-   <div class= "row states">
-       <div class="col-md-11"></div>
-       <div class= "col-md-1 statesPage" (click)= "changeState()">States
+   <div class= "states">
+       <button class= "statesPage" (click)= "changeState()">States 
           <!-- <select id="viewoption" (change)="changeState()">
               <option value="">States</option>
               <option *ngFor= "let state of states">{{state}}</option>
           </select> -->
-       </div>
+       </button>
    </div>
 
-</div>
 
 
 <div class="container" *ngIf ="todayCasesDetails">
 
-  <div class="row">
+  <div class="stuff">
 
-    <div class= "col-md-3 details">
+    <div class= "col-md-3 col-sm-12 details">
         <p>Daily confirmed: {{todayCasesDetails['dailyconfirmed']}}</p>
         <p>Daily deceased: {{todayCasesDetails['dailydeceased']}}</p>
         <p>Dailyrecovered: {{todayCasesDetails['dailyrecovered']}}</p>
@@ -31,9 +28,8 @@
         <p>Last updated on: {{updatedDate}}</p>
     </div>
 
-    <div class= "col-md-9">
+    <div class= "col-md-9 col-sm-12 chart">
         <ngx-charts-bar-vertical
-        [view]="view"
         [scheme]="colorScheme"
         [results]="todayCasesDetailsArray"
         [gradient]="gradient"

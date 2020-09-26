@@ -1,28 +1,27 @@
 .header{
 
-    display: flex;
     text-align: center;
-    flex-direction: row;
     font-size:30px;
     justify-content: space-around;
-    margin: 10px 0 10px 0;
     font-weight: bold;
-    
-}
+    margin-top:10px;
+    margin-bottom: 10px;
 
-.statesPage{
-    
-    text-align: center;
-    justify-content: space-around;
+}
+.top{
+
     display: flex;
     flex-direction: row;
-    background-color: rgb(211, 214, 183);
-    color:black;
-    font-weight: bold;
-    border-radius:5px;
-    margin: 0px 0px 5% 90%;
+    border-bottom-style:inset;
+    border-bottom-color: rgb(243, 240, 235);
+    background-color: rgb(243, 240, 235);
+    text-align: center;
+    justify-content: space-around;
+
 
 }
+
+
 
 .statesPage:hover{
    
@@ -44,15 +43,6 @@
 
 } */
 
-.top{
-   
-    margin:0px 0px 40px 0px;
-    border-bottom-style:inset;
-    border-bottom-color: rgb(243, 240, 235);
-    background-color: rgb(243, 240, 235);
-    margin: 0 0 5px 0;
-
-}
 
 .details{
 
@@ -66,3 +56,56 @@
 
 }
 
+@media only screen and (max-width:700px) and (min-width:200px){
+    
+    .chart{
+        margin-top: 20px;
+    }
+    .stuff{
+        display:flex;
+        flex-direction: column;
+        margin:10px;
+
+    }
+
+    .statesPage{
+    
+        text-align: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(211, 214, 183);
+        color:black;
+        font-weight: bold;
+        border-radius:5px;
+        margin-top: 10px;
+        margin-left: 80%;
+        margin-bottom: 20px;
+    
+    }
+}
+
+@media only screen and (max-width:1400px) and (min-width:700px) {
+
+
+    .stuff{
+        display: flex;
+        flex-direction: row;
+        margin:10px;
+    }
+    .statesPage{
+    
+        text-align: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(211, 214, 183);
+        color:black;
+        font-weight: bold;
+        border-radius:5px;
+        margin-top: 10px;
+        margin-left: 90%;
+        margin-bottom: 20px;
+    
+    }
+}

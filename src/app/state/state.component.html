@@ -21,28 +21,28 @@
 <div class= "container">
 
     <div class="row headings">
-        <div class="col-md-4 stateHeadings">State</div>
-        <div class="col-md-2 activeHeadings">Active</div>
-        <div class="col-md-2 confirmedHeadings">Confirmed</div>
-        <div class="col-md-2 recoveredHeadings">Recovered</div>
-        <div class="col-md-2 deathsHeadings">Deaths</div>
+        <div class=" stateHeadings">State</div>
+        <div class=" activeHeadings">Active</div>
+        <div class=" confirmedHeadings">Confirmed</div>
+        <div class=" recoveredHeadings">Recovered</div>
+        <div class=" deathsHeadings">Deaths</div>
 
     </div>
 
     <div class="row state" *ngFor= "let state of stateDetails">
-        <div class="col-md-4" *ngIf= "state.state">
+        <div class="statedata" *ngIf= "state.state">
             <p>{{state.state}}</p>
         </div>
-        <div class="col-md-2" *ngIf= "state.active">
+        <div class="statedata" *ngIf= "state.active">
             <p>{{state.active}}</p>
         </div>
-        <div class="col-md-2" *ngIf= "state.confirmed">
+        <div class="statedata" *ngIf= "state.confirmed">
             <p>{{state.confirmed}}</p>
         </div>
-        <div class="col-md-2" *ngIf= "state.recovered">
+        <div class="statedata" *ngIf= "state.recovered">
             <p>{{state.recovered}}</p>
         </div>
-        <div class="col-md-2" *ngIf= "state.deaths">
+        <div  class="statedata" *ngIf= "state.deaths">
             <p>{{state.deaths}}</p>
         </div>
     </div>
